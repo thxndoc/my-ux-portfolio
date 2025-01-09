@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/favicon.png" type="image/png">
+    <title>Portfolio - Thando Cibi</title>
+    <link rel="stylesheet" href="superbalist.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/688a8bb464.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!--This is the header-->
+<header>
+    <nav>
+        <ul class='nav-bar'>
+            <li class='logo'><a href='/index.html'><img src='./images/logo.png'/></a></li>
+
+            <input type='checkbox' id='check' />
+
+            <span class="menu">
+                <li><a href="/index.html">HOME</a></li>
+                <li><a href="https://6d83bdff-6280-4f82-9d62-b5c1b465ec4c.filesusr.com/ugd/ad9929_d6c1913c70b24089908457180cdc6aa9.pdf" target="_blank"">DOWNLOAD CV</a></li>
+                <li><a href="#footer">CONTACT</a></li>
+                <label for="check" class="close-menu"><i class="fa-solid fa-xmark"></i></label>
+            </span> <!--'label for='' will look for id only, NOT class-->
+            
+            <label for="check" class="open-menu"><i class="fa-solid fa-bars"></i></label>
+        </ul>
+    </nav>
+</header>
+
+<!--This is the main content section-->
+<main>
+
+    <section class="cs-title"> <!--This is the title section-->
+        <div class="img"><img src="./images/superbalist/cover-cs.png" alt="superbalist logo"></div>
+        <p class="note">NB: This is a study on my own experience and to show my thought process.</p>
+        <h1>How a confirmation can improve the user experience</h1>
+    </section>
+
+    <section class="cs-body"> <!--This is the body under the title section-->
+        <div class="container"><!--This is where I show the shoe-->
+            <div class="content">
+                <h2>The shoe</h2>
+                <p>I was on the Superbalist app and I navigated to my wishlist page to see if the shoe I had added was on sale...
+                </p>
+            </div>
+            <div class="media">
+                <img src="./images/superbalist/pink-shoe.png" alt="a pink hiking shoe">
+            </div>
+        </div>
+
+        <div class="container"> <!--This is where I show the icon-->
+            <div class="content">
+                <h2>The icon</h2>
+                <p>I then scrolled down to find that this shoe was sold out and next to it was an icon that I didn't really recognize. I clicked on it and all of a sudden my shoe was gone! It disappeared in the blink of an eye. <span>Below is a video of what happened...</span>
+                </p>
+            </div>
+            <div class="media">
+                <img src="./images/superbalist/icon.jpg" alt="a waitlist icon">
+            </div>
+        </div>
+                
+        <div class="container" id="video">  <!--This is where I show the video-->
+            <div class="content">
+                <h3>click to play & click to pause</h3>
+                <p>watch out for the pink shoe in the video</p>
+            </div>
+            <div class="superbalist-video">
+                <video width="250" height="500" controls>
+                    <source src="./images/superbalist/video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+       
+        <div class="container" id="found-shoe"> <!--This is where I show where I found the shoe-->
+            <div class="content">
+                <p>I was confused and wondered where the shoe had gone, so I searched until eventually <Span>I found it in my account section under 'waitlist'.</Span> Now I understood what the icon meant.
+                </p>
+            </div>
+            <div class="media">
+                <img src="./images/superbalist/found-shoe.png" alt="waitlist section under my account section">
+            </div>
+        </div>
+
+        <div class="container" id="how-might-we"> <!--How might we?-->
+            <div class="content">
+                <h4>How might we improve the experience?</h4>
+                <p>An acknowledgement put in a snackbar would improve my experience and alleviate my anxiety and confusion because I would know exactly where the shoe is. This would also help with <Span>recognition rather than recall.</Span>The user would receive confirmation that the item has been added to the waitlist (recognition), instead of hiding it immediately (recall).<Span>Let's look at the pink coin purse below as an example...</Span>
+                </p>
+            </div>
+
+            <div class="card-container one"> <!--container for cards-->
+                <div class="card"> <!--card 1-->
+                    <div class="img">
+                        <img src="./images/superbalist/confirmation-1.png" alt="pink coin purse sold out">
+                    </div>
+                    <div class="text one">
+                        <p>1. Pink coin purse is sold out</p>
+                    </div>
+                </div>
+
+                <div class="card"> <!--card 2-->
+                    <div class="img">
+                        <img src="./images/superbalist/confirmation-2.png" alt="a waitlist icon">
+                    </div>
+                    <div class="text one">
+                        <p>2. I click on the waitlist icon</p>
+                    </div>
+                </div>
+
+                <div class="card"> <!--card 3-->
+                    <div class="img">
+                        <img src="./images/superbalist/confirmation-3.png" alt="snackbar with acknowledgement">
+                    </div>
+                    <div class="text one">
+                        <p>3. Snackbar with acknowledgement appears</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="user-flow"> <!--This is where I show the current user flow-->
+            <div class="content">
+                <h4 class="step-further">Taking it a step further...</h4>
+                <p>Now that I know that my item has been moved to my 'waitlist' section, <Span> how can I improve the experience of getting to my waitlist?</Span>
+                </p>
+                <h4 class="current-flow">This is the current user flow:</h4>
+            </div>
+
+            <div class="card-container two">
+                <div class="card"> <!--user flow 1-->
+                    <div class="card-img">
+                        <img src="./images/superbalist/user-flow-1.png" alt="pink coin purse sold out">
+                    </div>
+                    <div class="text two">
+                        <p>1. Click on hamburger menu</p>
+                    </div>
+                </div>
+
+                <div class="card"> <!--user flow 2-->
+                    <div class="card-img">
+                        <img src="./images/superbalist/user-flow-2.png" alt="a waitlist icon">
+                    </div>
+                    <div class="text two">
+                        <p>2. Click on 'Account'</p>
+                    </div>
+                </div>
+
+                <div class="card"> <!--user flow 3-->
+                    <div class="card-img">
+                        <img src="./images/superbalist/user-flow-3.png" alt="snackbar with acknowledgement">
+                    </div>
+                    <div class="text two" id="text-two">
+                        <p>3. Click on 'Waitlist'</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="improve"> <!--Improving user experience to find waitlist-->
+            <div class="content">
+                <h5 class="h5 one">How it can be improved</h5>
+                <p><Span>Adding a waitlist icon and text in the hamburger menu</Span> would make the experience easier.
+                </p>
+                <h5 class="h5 two">Why?</h5>
+                <p>For the <span>user to recognize</span> that the icon seen in the 'wishlist' section means that it is a 'waitlist' and to optimize the user experience by <span>reducing the number of steps</span> that need to be taken to get to the 'waitlist'.</p>
+            </div>
+            <div class="media">
+                <img src="./images/superbalist/improvement.png" alt="waitlist section under my account section">
+            </div>
+        </div>
+    </section>
+
+    <section class="end-body"> <!--Thank you-->
+        <h6>Thank you</h6>
+        <a href="index.html#case-studies">See other case studies</a>
+    </section>
+
+</main>
+
+<!--This is the footer-->
+     <footer id="footer">
+        <hr>
+        <div class="footer">
+            <div class="socials"> <!--icons for social media-->
+                <a href="mailto:uthandocibi@gmail.com" target="_blank">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+                <a href="https://github.com/thvndoc" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/thando-cibi-47b066180/" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </div>
+            <p>created with ❤️ by Thando C.</p>
+        </div>
+     </footer>
+ 
+</body>
+</html>
+
+</body>
+</html>

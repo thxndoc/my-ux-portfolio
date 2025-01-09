@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/favicon.png" type="image/png">
+    <title>Portfolio - Thando Cibi</title>
+    <link rel="stylesheet" href="taxi.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/688a8bb464.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!--This is the header-->
+<header>
+    <nav>
+        <ul class='nav-bar'>
+            <li class='logo'><a href='/index.html'><img src='./images/logo.png'/></a></li>
+
+            <input type='checkbox' id='check'/>
+
+            <span class="menu">
+                <li><a href="/index.html">HOME</a></li>
+                <li><a href="https://6d83bdff-6280-4f82-9d62-b5c1b465ec4c.filesusr.com/ugd/ad9929_d6c1913c70b24089908457180cdc6aa9.pdf" target="_blank"">DOWNLOAD CV</a></li>
+                <li><a href="#footer">CONTACT</a></li>
+                <label for="check" class="close-menu"><i class="fa-solid fa-xmark"></i></label>
+            </span> <!--'label for='' will look for id only, NOT class-->
+            
+            <label for="check" class="open-menu"><i class="fa-solid fa-bars"></i></label>
+        </ul>
+    </nav>
+</header>
+
+<!--This is the main content section-->
+<main>
+
+    <section class="cs-title"> <!--This is the title section-->
+        <figure>
+            <img src="./images/taxi/cover-cs.png" alt="a row of minibus taxis">
+            <figcaption>
+                image by <a href="https://sataxi.co.za/" target="_blank">SA Taxi</a>
+            </figcaption>
+        </figure>
+
+        <p class="note">
+            NB: This is a conceptual project to show my workflow and thought process
+        </p>
+
+        <div class="role-wrapper">
+            <div class="box1">
+                <p class="role">Role</p>
+                <p>UX design, UX Research</p>
+                <p class="role">Duration</p>
+                <p>8 weeks</p>
+                <p class="role">Tools</p>
+                <p>Figma, Rhino 3D</p>
+            </div>
+            <div class="box2">
+                <p class="contributions">Contributions</p>
+                <ul>
+                    <li>Research & analysis</li>
+                    <li>Ethnographic research</li>
+                    <li>Journey mapping</li>
+                    <li>Ideation</li>
+                    <li>Prototyping</li>
+                    <li>Usability testing</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="introduction"> <!--This is the introduction section-->
+        <div class="container intro"> <!--Introduction-->
+            <h1>Introduction</h1>
+            <p>The South African taxi industry is an integral part of the country's transportation network. However, it is also an industry that relies heavily on cash transactions. This conceptual project will explore a cashless fare payment system.</p>
+        </div>
+        <div class="container summary"> <!--Summary-->
+            <h2>Summary</h2>
+            <p>The Cashless Fare Payment System is a conceptual project aimed at facilitating payment of fares by commuters utilizing minibus taxis. The payment process involves the use of an NFC-enabled tag, which is scanned by a validation device installed in the taxi. Commuters would have the option of loading and checking their account balance through an integrated USSD system linked to their bank, or through their respective banking app.
+            </p>
+        </div>
+    </section>
+
+    <section class="roadmap"> <!--This is the roadmap section-->
+        <div class="container roadmap"> <!--Roadmap-->
+            <h3>Roadmap</h3>
+            <div class="card-container one"> <!--container for cards-->
+                <div class="card roadmap"> <!--card 1-->
+                    <div class="img">
+                        <img src="./images/taxi/circle-1.png" alt="number 1">
+                    </div>
+                    <div class="text one">
+                        <h4>The industry</h4>
+                        <p>Understanding the current fare payment process</p>
+                    </div>
+                </div>
+                <div class="card roadmap"> <!--card 2-->
+                    <div class="img">
+                        <img src="./images/taxi/circle-2.png" alt="number 2">
+                    </div>
+                    <div class="text one">
+                        <h4>Commuters (Users)</h4>
+                        <p>Learn current behaviour, pain points and needs through natural observation and interviews</p>
+                    </div>
+                </div>
+                <div class="card roadmap"> <!--card 3-->
+                    <div class="img">
+                        <img src="./images/taxi/circle-3.png" alt="number 3">
+                    </div>
+                    <div class="text one">
+                        <h4>Competitors</h4>
+                        <p>Who the major competitors are and what they are doing in the industry</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container industry"> <!--The industry-->
+            <div class="card industry" id="circle-1"> <!--card 1-->
+                <img src="./images/taxi/circle-1.png" alt="number 1">
+            </div>
+        
+            <div class="card industry"> <!--card 2-->
+                 <div class="text industry">
+                    <h4>The industry</h4>
+                    <p>As of 2020, South Africans make up 62% of households that use taxis as their main mode of transport, while 19% use a private vehicle as a driver and 9% use the bus; however, most taxi drivers still rely heavily on cash transactions.<sup>1</sup></p>
+                    </div>
+            </div>
+             <div class="card industry"> <!--card 3-->
+                <div class="img">
+                    <img src="./images/taxi/chart.png" alt="pie chart">
+                </div>
+            </div>
+            <div class="card industry"> <!--card 4-->
+                <div class="img">
+                    <img src="./images/taxi/percentages.png" alt="percentages from pie chart">
+                </div>
+            </div>
+        </div>
+
+        <div class="container representation"> <!--Representation-->
+            <h5 class="h5">
+                This is a representation of a typical fare payment process in a minibus taxi:
+            </h5>
+            <img src="./images/taxi/representation.png" alt="commuters board taxi, commuters pass money to person sitting in front passenger seat, commuter in front counts money and gives change to passengers, once total fare amount is received, it is given to driver and then driver double checks total fare amount">
+            <h5 class="why">why is the industry still using cash?</h5>
+            <p>...the proudly independent and largely cash-fuelled industry would need to become tax compliant and adhere to government regulations.<sup>2</sup></p>
+        </div>
+
+        <div class="container commuters">  <!--Commuters-->
+            <div class="circle-2">
+                <img src="./images/taxi/circle-2.png" alt="number 2">
+                <div class="text">
+                    <h5 class="heading">Commuters(users)</h5>
+                    <p>I interviewed 6 people that use taxis on a regular basis and I used a few taxis myself to observe the process. I then proceeded to create a user journey to show the fare payment process from the user's perspective.</p>
+                </div>
+            </div>
+
+            <div class="emoji">
+                <p class="journey">Current user journey</p>
+                <img src="./images/taxi/finger.png" alt="finger pointing down emoji">
+            </div>
+
+            <img src="./images/taxi/current-user-journey.png" alt="current user flow">
+            <blockquote><q>All minibus taxi commuters have hilarious stories about the exchange of money in a taxi. Some people will bring R100 notes, some R50, others the exact taxi fare in coins which will end up underneath the taxi seats; squabbles often erupt in a taxi due to lack of change. Then there are those brave enough not to pay, prompting the driver to make a U-turn and drive all of us back to the taxi rank.</q>
+            <a href="https://www.bizcommunity.com/Article/196/709/217215.html">- Oratile Seabela, Founder of MALII
+            </a>
+            </blockquote>
+
+            <img src="./images/taxi/affinity-map.png" alt="affinity map">
+        </div>
+    </section>
+
+    <section class="archetypes"> <!--This is the archetypes section-->
+        <p>
+        After creating the affinity map and looking at the feedback, I came up with 2 archetypes:
+        </p>
+
+        <div class="wrapper">
+            <div class="archetype-1">
+                <h5>Cautious Commuter</h5>
+                <p class="heading">Behaviour</p>
+                <p class="sub">
+                Does not like to frequent the ATM, uses a card to pay where she can</p>
+                <p class="heading">Goals</p>
+                <p class="sub">Protect her belongings and feel safe</p>
+                <p class="heading">Needs</p>
+                <p class="sub">Reduce travelling to the ATM to withdraw money</p>
+                <p class="heading">Frustrations</p>
+                <p class="sub">
+                Withdrawing large amounts for safety reasons. Does not like walking around with cash
+                </p>
+            </div>
+
+            <div class="archetype-2">
+                <h5>Convenience Seeking Commuter</h5>
+                <p class="heading">Behaviour</p>
+                <p class="sub">Looks for ways to make things more efficient and convenient, is tech savvy</p>
+                <p class="heading">Goals</p>
+                <p class="sub">Does not want to worry about taxi fare</p>
+                <p class="heading">Needs</p>
+                <p class="sub">A convenient way to make payments</p>
+                <p class="heading">Frustrations</p>
+                <p class="sub">Travelling to withdraw cash, waiting in a queue, not having the exact fare amount, carrying cash</p>
+            </div>
+        </div>
+
+        <p>How might we find a way to cut out time taken to go withdraw cash and for commuters to pay fares in a convenient and hassle-free way?</p>
+
+        <div class="going-cashless">
+            <h5>Going cashless</h5>
+            <p>Going cashless has several benefits, such as increased convenience and reduced risk of theft. By using digital payment methods, people can make transactions quickly and easily, without the need for physical cash. This not only saves time, but also eliminates the hassle of carrying large amounts of money or having to visit an ATM. For taxi owners and drivers, there would be increased transparency as the money would be able to be tracked.</p>
+        </div>
+    </section>
+
+    <section class="competitors"> <!--This is the competitors section-->
+        <div class="heading"> <!--heading-->
+            <img src="./images/taxi/circle-3.png" alt="number 3">
+            <h5>Competitors</h5>
+        </div>
+
+        <div class="malii">
+            <h5>MALII</h5>
+            <img src="./images/taxi/malii.png" alt="Malii app logo">
+            <div class="malii-content">
+                <p>MALII is an app that enables commuters to pay their taxi fares without using cash. Commuters deposit money into the MALII wallet using their bank card or by topping up at a nearby spaza shop, find the QR code sticker on the taxi window and scan it with their smartphone.</p>
+
+                <p>There is a physical card for those who do not own a smartphone. Driver takes the card and scans the QR code on the card.</p>
+
+                <p>Funds are immediately reflected into the driver's account at the end of the business day according to payment agreement between driver and owner.</p>
+            </div>
+
+            <p class="malii-button">
+                <a href="https://youtu.be/sjzo6k7Aq6Y" target="_blank">See video of MALII app</a>
+            </p>
+        </div>
+
+        <div class="fairpay">
+            <h5>FAIRPAY</h5>
+            <div class="fairpay-images">
+                <img src="./images/taxi/malii-card.png" alt="Malii card">
+                <img src="./images/taxi/malii-tablet.png" alt="Malii tablet">
+                <img src="./images/taxi/malii-machine.png" alt="Malii machine">
+            </div>
+            <div class="fairpay-content">
+
+            </div>
+            <p class="button"><a href="https://youtu.be/2FXbZkUFFas" target="_blank">See video of FAIRPAY</a></p>
+        </div>
+
+        <div class="gaps">
+            <div class="emoji">
+                <h5>Gaps identified</h5>
+                <img src="./images/taxi/finger.png" alt="finger pointing down emoji">
+            </div>
+
+            <div class="content-wrapper">
+
+                <div class="malii-gap">
+                    <p>1. MALII</p>
+                    <ul>
+                        <li>App might reduce storage on phone and would require updates.</li>
+                        <li>For those without smartphone, driver has to scan the QR code which might be an inconvience.</li>
+                    </ul>
+                </div>
+
+                <div class="fairpay-gap">
+                    <p>2. FAIRPAY</p>
+                    <ul>
+                        <li>Many devices in the process (POS device, ticket validator device, tablet scanner, front end system), might be too costly.</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="brainstorm">
+                <div class="emoji">
+                    <h5>Brainstorming ideas</h5>
+                    <img src="./images/taxi/finger.png" alt="finger pointing down emoji">
+                </div>
+
+                <img src="./images/taxi/brainstorming.png" alt="variety of payment devices" class="brainstorm-img">
+            </div>
+        </div>
+    </section>
+
+    <section class="solution">  <!--Solution section-->
+        <h5 class="heading one">Solution</h5>
+        <p>After brainstorming, I decided not to go with an app. I chose something physical and small enough to carry wherever; <span class="highlight">a contactless payment tag, a validation machine and a USSD code.</span> This payment tag would have a hole to insert a keyring that could be attached to a lanyard.</p>
+
+        <h5 class="heading two">Why?</h5>
+        <p class="p1">A contactless payment tag would provide <span class="highlight">convenience</span> and <span class="highlight">user friendliness</span> for the commuter as there would be no need to take out a smartphone to pay and can be attached to a lanyard for ease of access. The validation device would be linked to the taxi owner's bank account and funds could be released at the end of each day.</p>
+
+        <p>The USSD code system will provide <span class="hightlight">inclusion</span> to those who don't have a smartphone and will allow commuters to check and top-up their balance, eliminating the need to go to a kiosk.</p>
+
+        <div class="accessories">
+            <div class="tag">
+                <h5>Payment tag</h5>
+                <img src="./images/taxi/tag-front.png" alt="drawing of back of payment tag with account number">
+                <img src="./images/taxi/tag-back.png" alt="drawing of front of payment tag with tap feature">
+            </div>
+
+            <div class="device">
+                <h5>Validation device</h5>
+                <img src="./images/taxi/device.png" alt="validation device with screen and tap feature">
+            </div>
+        </div>
+
+        <div class="wireframes"> <!--wireframe screens-->
+            <div class="emoji" id="emoji">
+                <h5>USSD system</h5>
+                <img src="./images/taxi/finger.png" alt="finger pointing down emoji">
+            </div>
+
+            <div class="screens">
+                <p>View balance</p>
+                <img src="./images/taxi/view-balance-com.png" alt="view balance screen flow">
+                <p>Top up</p>
+                <img src="./images/taxi/top-up-com.png" alt="top up screen flow">
+                <p class="alternative">I created an alternative option to the USSD system, integrating with the commuter's banking app which would eliminate the need for a standalone app.</p>
+                <img src="./images/taxi/banking-wireframe.png" alt="banking app flow">
+            </div>
+        </div>
+
+        <div class="usability">
+            <h5>Usability testing</h5>
+            <p>I interviewed 6 commuters by creating prototypes of the USSD system and the bank integration and this was the feedback:</p>
+
+            <div class="feedback">
+                <div class="feedback-cards">
+                    <img src="./images/taxi/happy.png" alt="happy face">
+                    <p>Users found the USSD system and bank integration easy to navigate and use overall.</p>
+                </div>
+
+                <div class="feedback-cards">
+                    <img src="./images/taxi/neutral.png" alt="neutral face">
+                    <p>Users mentioned on the USSD system that the funds taking 2 business days to load might be an inconvenience.</p>
+                </div>
+            </div>
+
+            <p class="refine">From the feedback I received about the funds in the USSD system taking 2 business days to reflect, I decided to refine my concept and link the USSD system to the commuter's bank account. So instead of having a standalone USSD system, it would be integrated with the bank so that it would be similar to buying airtime or electricity.</p>
+
+            <div class="screens">
+                <p>View balance</p>
+                <img src="./images/taxi/ussd-wireframe-1.png" alt="view balance screen flow">
+                <p>Top up</p>
+                <img src="./images/taxi/ussd-wireframe-2.png" alt="top up screen flow">
+            </div>
+    </section>
+
+    <section class="prototypes"> <!--Prototypes section-->
+        <div class="emoji">
+            <h5>Prototypes</h5>
+            <img src="./images/taxi/finger.png" alt="finger pointing down emoji">
+        </div>
+
+        <div class="screens">
+            <p>View balance</p>
+            <img src="./images/taxi/view-balance.png" alt="view balance screen flow">
+            <p>Top up</p>
+            <img src="./images/taxi/top-up.png" alt="top up screen flow">
+        </div>
+
+        <div class="models"> <!--3d models-->
+            <div class="tag">
+                <h5>Payment tag</h5>
+                <img src="./images/taxi/payment-tag1.png" alt="drawing of back of payment tag with account number">
+                <img src="./images/taxi/payment-tag2.png" alt="drawing of front of payment tag with tap feature">
+            </div>
+
+            <div class="device">
+                <h5>Validation device</h5>
+                <img src="./images/taxi/payment-terminal.png" alt="validation device with screen and tap feature">
+            </div>
+        </div>
+
+        <div class="container existing-ba"> <!--Existing banking app-->
+            <div class="emoji">
+                <p>Client's existing banking app</p>
+                <img src="./images/taxi/finger.png" alt="finger pointing down emoji">
+            </div>
+
+            <img src="./images/taxi/banking-app.png" alt="banking app flow">
+        </div>
+    </section>
+
+    <div class="container conclusion">  <!--Conclusion-->
+        <p class="heading">Conclusion</p>
+        <p>This conceptual project was initiated because of my personal observation of the inefficiency and inconvenience of using cash as a mode of payment in minibus taxis. However, I acknowledge that if this were to be implemented as an actual project, it would involve multiple stakeholders and include a multitude of considerations and touchpoints. I recognize that an implementation of such a project would entail a significant amount of time, exceeding the duration of 8 weeks.</p>
+    </div>
+
+    <section class="reference-list"> <!--Reference list-->
+        <div class="container reference"> 
+            <h6>Reference list</h6>
+            <ol>
+                <li><a href="https://www.statssa.gov.za/publications/P0320/P03202020.pdf" target="_blank">National Households Travel Survey 2020</a></li>
+                <li><a href="https://www.bridgetaxifinance.co.za/taxi-the-future/" target="_blank">The future of the SA Taxi industry</a></li>
+            </ol>
+        </div>
+    </section>
+
+    <section class="end-body"> <!--Thank you-->
+        <h6>Thank you</h6>
+        <a href="index.html#case-studies">See other case studies</a>
+    </section>
+
+</main>
+
+<!--This is the footer-->
+<footer id="footer">
+    <hr>
+    <div class="footer">
+        <div class="socials"> <!--icons for social media-->
+            <a href="mailto:uthandocibi@gmail.com" target="_blank">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="https://github.com/thvndoc" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/thando-cibi-47b066180/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+        </div>
+        <p>created with ❤️ by Thando C.</p>
+    </div>
+ </footer>
+
+</body>
+</html>
+
+</body>
+</html>

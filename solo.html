@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/favicon.png" type="image/png">
+    <title>Portfolio - Thando Cibi</title>
+    <link rel="stylesheet" href="solo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/688a8bb464.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!--This is the header-->
+<header>
+    <nav>
+        <ul class='nav-bar'>
+            <li class='logo'><a href='/index.html'><img src='./images/logo.png'/></a></li>
+
+            <input type='checkbox' id='check'/>
+
+            <span class="menu">
+                <li><a href="/index.html">HOME</a></li>
+                <li><a href="https://6d83bdff-6280-4f82-9d62-b5c1b465ec4c.filesusr.com/ugd/ad9929_d6c1913c70b24089908457180cdc6aa9.pdf" target="_blank"">DOWNLOAD CV</a></li>
+                <li><a href="#footer">CONTACT</a></li>
+                <label for="check" class="close-menu"><i class="fa-solid fa-xmark"></i></label>
+            </span> <!--'label for='' will look for id only, NOT class-->
+            
+            <label for="check" class="open-menu"><i class="fa-solid fa-bars"></i></label>
+        </ul>
+    </nav>
+</header>
+
+<!--This is the main content section-->
+<main>
+ 
+    <section class="cs-title"> <!--title section-->
+        <div class="img"><img src="./images/solo-app/cover-cs.png" alt="superbalist logo"></div>
+        <p class="note">NB: This was my first case study as part of my UX Design course in a program called Entry Level.</p>
+    </section>
+
+    <section class=" container abstract"> <!--abstract and intro-->
+        <div class="wrapper">
+            <div class="text">
+                <h1>Abstract</h1>
+                <p>We were given a task to create a mobile app that lets solo travelers connect with others. This report was created to better understand the process that users go through to connect with others, the specific problems faced by them, and to find a possible solution to that problem.</p>
+            </div>
+            <img src="./images/solo-app/abstract.png" alt="illustration of airplane">
+        </div>
+
+        <div class="role">
+            <div class="box">
+                <p><span class="sub">Role</span><br>UX Design. I was part of a program called 'Entry Level' where I was in a group of other UX Designers where we were each tasked in creating a mobile app.</p>
+            </div>
+
+            <div class="box">
+                <p><span class="sub">Approach</span><br>Most of the research focused on interviews with the development of a persona which was then followed by a mobile app solution for solo traveller's.</p>
+            </div>
+
+            <div class="box">
+                <p><span class="sub">Methods</span><br>Interviews, affinity mapping, persona, lightning demo, brainstorming, prototyping, usability testing.<br><span class="sub">Duration</span><br>6 weeks</p>
+            </div>
+        </div>
+
+    </section> 
+
+    <section class=" container interviews"> <!--interviews/affinity map-->
+        <h2>User Interviews</h2>
+        <img src="./images/solo-app/interview-affinity.png" alt="affinity map" class="img">
+
+        <div class="aff-interview">
+            <p>I used interviews as my main method of research and created an affinity map to categorize the insights so that I could start building the persona.</p>
+            <img src="./images/solo-app/person-on-bag.png" alt="illustration of person sitting on luggage bag">
+        </div>
+    </section>
+
+    <section class="container persona"> <!--user persona-->
+        <h3 class="persona-heading">User persona</h3>
+
+        <div class="persona-box">
+            <div class="profile">
+                <div class="user-profile">
+                    <img src="./images/solo-app/profile-pic.png" alt="profile picture of woman">
+                    <q>We can learn a lot from each other</q>
+                    <h3 class="profile-heading">Bio</h3>
+                    <ul>
+                        <li><span class="sub">Age:</span> 29</li>
+                        <li><span class="sub">Location:</span> Johannesbug, South Africa</li>
+                        <li><span class="sub">Gender:</span> Female</li>
+                        <li><span class="sub">Occupation:</span> Formulation Specialist</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content-box background">
+                <h3 class="profile-heading">Background</h3>
+                <p>Mbali is a young professional who likes to travel. She also makes a small income from content creation related to travelling. She enjoys hiking or jogging on weekends. She likes trying out new places and "hidden gems" based on recommendations from people on social media sites like Tiktok and Instagram. In addition to that, she likes meeting new people and would like to connect with others because she believes there is something to learn from everybody.</p>
+            </div>
+
+            <div class="content-box behaviour">
+                <h3 class="profile-heading">Behaviour</h3>
+                <ul>
+                    <li>She uses social media to find fun things to do on her trips</li>
+                    <li>She uses apps, sites to book trips</li>
+                    <li>She spends her money wisely</li>
+                    <li>She is vigilant when travelling alone</li>
+                    <li>She likes meeting new people</li>
+                    <li>She enjoys food</li>
+                </ul>
+            </div>
+            
+            <div class="content-box dislikes">
+                <h3 class="profile-heading">Dislikes</h3>
+                <ul>
+                    <li>Being disorganized</li>
+                    <li>Excessive spending</li>
+                    <li>Feeling unsafe</li>
+                    <li>Being late</li>
+                    <li>Information overload, feeling overwhelmed</li>
+                </ul>
+            </div>
+
+            <div class="content-box goals">
+                <h3 class="profile-heading">Goals</h3>
+                <ul>
+                    <li>Wants to visit foreign countries</li>
+                    <li>Wants to get a feel of other cultures</li>
+                    <li>Wants to stay and feel safe when travelling</li>
+                    <li>Wants to save money when travelling</li>
+                </ul>
+            </div>
+
+            <div class="content-box likes">
+                <h3 class="profile-heading">Likes</h3>
+                <ul>
+                    <li>Food</li>
+                    <li>Meeting new people</li>
+                    <li>Learning about other cultures</li>
+                    <li>Trying new activities</li>
+                    <li>Getaways</li>
+                    <li>Being in nature</li>
+                </ul>
+            </div>
+
+
+
+        </div>
+    </section>
+    
+    <section class="container statement">  <!--problem statement-->
+        <div class="wrapper">
+            <div class="text">
+                <h4>Problem Statement</h4>
+                <p>Solo travel has a way of opening up your mind to new experiences, makes you independent and gives you a chance to connect with new people. As a solo traveler,
+                <span class="highlight">I want to feel well acquainted, secure and within budget so that I can travel stress-free. How might we provide our users with the tools to make their solo travel experiences the best they can be?</span></p>
+            </div>
+            <img src="./images/solo-app/pulling-bag.png" alt="illustration of person pulling luggage bag">
+        </div>
+
+        <div class="demo-box">
+            <h5 class="demo-heading">Lightning demo</h5>
+            <img src="./images/solo-app/lightning-demo.png" alt="lightning demo" class="lightning-demo">
+        </div>
+    </section>
+
+    <section class="container brainstorm">  <!--brainstorming ideas-->
+        <h5>Brainstorming ideas</h5>
+
+        <div class="ideas">
+            <p class="note">Budget planner app to prepare for your trip and track your spending. Includes money saving tips from others.</p>
+            <p class="note">Travel planner mobile app including community tab for information about places to visit, things to do etc.</p>
+            <p class="note">Platform to travel with others in a group, where the leader/guide shares information, alerts travelers about important times.</p>
+            <p class="note">Platform where travelers meet in common area, can split for a period of time to do own thing, everyone's location is tracked for safety (only visible to guide) group meets back at common place.</p>
+            <p class="note">App offering experiences in a group setting, allowing for people to meet each other.</p>
+            <p class="note">Meet and greet style app. Anyone travelling to the same place can connect on the app and then meet and greet in person at the destination.</p>
+            <p class="note">App with discounts on travel related things like flights and accommodation. Includes tips on how to prepare for your flight and making the most out of your stay.</p>
+            <p class="note">
+            App with "hidden gem" types of places (accommodation, restaurants, activities) recommended by others with reviews and ratings.</p>
+            <p class="note">
+            App focused on trying something new with someone and sharing your experience.</p>
+            <p class="note">Chat style app where you can get real time advice from people who have been/on the same trip as you, ratings on places, do's and dont's (community watch style), updated regularly.</p>
+        </div>
+
+        <p class="chosen">After brainstorming, I decided to go with the chat style app where solo travelers can get real-time advice from people who are on or have been on the trip they wish to go on. This would include travel tips, pictures, ratings on places and would be update regularly by the users. This would provide a way for people to connect with each other while also getting advice.</p>
+    </section>
+
+    <section class="container wireframe">  <!--wireframes-->
+        <div class="wireframe">
+            <h5>Wireframes</h5>
+            <img src="./images/solo-app/wireframes.png" alt="wireframe">
+        </div>
+
+        <p>Following the wireframe would be a prototype flow showcasing how a solo traveller would navigate the app and connect with others.</p>
+        
+        <div class="flow">
+            <h5>Prototype Flow</h5>
+            <img src="./images/solo-app/prototype-flow.png" alt="prototype flow for solo travel app">
+        </div>
+    </section>
+
+    <section class="container usability">   <!--usability test-->
+        <h5>Usability testing</h5>
+        <p>For the test, I created a high fidelity prototype and I invited 6 users to test the app using Figma and voice call. The feedback I received in terms of the ease of use, ease of interface and satisfaction of the app was app was good, although most of the users wanted an option to login with Google or Facebook for convenience.</p>
+        <div class="graph">
+            <img src="./images/solo-app/feedback.png" alt="bar graph depicting results from usability test">
+        </div>
+        <p>When conducting the usability testing, I realised that I would have to add an option to sign in with Gmail or Facebook as this was more convenient for them to avoid having to remember another password.</p>
+    </section>
+
+    <section class="container hifi">   <!--hi-Fi prototype-->
+        <p class="prototype">Hi-Fi Prototype</p>
+        <img src="./images/solo-app/hifi-prototype.png" alt="hifi prototype of solo travel app">
+    </section>
+
+    <section class="container conclusion">  <!--conclusion-->
+        <h6 class="heading">Conclusion</h6>
+        <p class="paragraph">This project pushed me to get out of my comfort zone by reaching out to and talking to different people. I also learned that collaboration goes a long way; my group members and I would ask each other questions and brainstorm together where we struggled. Lastly, I found that I need to improve my research and communication skills in future as this will allow me to ask better questions and come up with better solutions.</p>
+    </section>
+
+    <section class="end-body"> <!--Thank you-->
+        <h6>Thank you</h6>
+        <a href="index.html#case-studies">See other case studies</a>
+    </section>
+
+</main>
+
+<!--This is the footer-->
+<footer id="footer">
+    <hr>
+    <div class="footer">
+        <div class="socials"> <!--icons for social media-->
+            <a href="mailto:uthandocibi@gmail.com" target="_blank">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="https://github.com/thvndoc" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/thando-cibi-47b066180/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+        </div>
+        <p>created with ❤️ by Thando C.</p>
+    </div>
+ </footer>
+
+ </div>
+</body>
+</html>
+
+</body>
+</html>

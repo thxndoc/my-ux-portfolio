@@ -1,0 +1,660 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    :root {
+        --text-color: #202020;
+        --hover: #4d30ab;
+        --dark-grey: #202020;
+    }
+    
+    h1, h2, h3, 
+    h4, h5, h6,
+    p, a, i, q, li {
+        color: var(--text-color);
+        font-family: Nunito, sans-serif;
+    }
+    
+    /***********Styling for body. Display flex used to ensure footer stays at the bottom**********/
+    body {
+        display: flex;
+        flex-direction: column;
+        background-color: #f7f7f5;
+        margin: 4.5em 4em 0 4em;
+    }
+    
+    /******************************Styling for header & navbar*************************************/
+    .nav-bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 80px;
+        z-index: 999;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        background-color: #f7f7f5;
+        padding: 0 2em;
+        box-shadow: 0.5px 0.5px 1px #727272;
+    }
+    .logo img {height: 50px;}
+    .menu {display: flex;}
+    .menu li {padding-left: 1em;}
+    .menu li a {
+        font-size: 1.125rem;
+        font-weight: 600;
+        display: inline-block;
+        text-decoration: none;
+        color: var(--text-color);
+        text-align: center;
+        transition: all 0.3s;
+        position: relative;
+        text-transform: uppercase;
+    }
+    
+    .menu li a:hover {color: var(--hover);}
+    .open-menu , .close-menu {
+        position: absolute;
+        cursor: pointer;
+        font-size: 1.5rem;
+        display: none;
+    }
+    .open-menu {
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+    }
+    .close-menu {
+        top: 20px;
+        right: 20px;
+    }
+    #check {display: none;}
+    
+/********************************Styling for title section*************************************/
+.cs-title figure {
+    max-width: 400px;
+    margin: auto;
+}
+
+figcaption {
+    font-family: Nunito, sans-serif;
+}
+
+.cs-title img {
+    max-width: 100%;
+}
+
+.note {
+    font-size: 0.875rem;
+    text-align: center;
+    margin-top: 1em;
+}
+
+/******************Container*********************/
+.container,
+.archetypes,
+.going-cashless,
+.competitors,
+.solution,
+.prototypes {
+    margin-top: 1.5em;
+}
+
+/******************Styling for role and contribution section*********************/
+.box1,
+.box2 {
+   font-size: 1.125rem;
+}
+
+.role-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 1em;
+}
+
+.role,
+.contributions {
+    font-weight: bold;
+}
+
+/******************Styling for intro and summary section*********************/
+.container h1,
+.container h2,
+.container h3 {
+    font-size: 2rem;
+}
+
+.container p {
+    font-size: 1.125rem;
+    max-width: 90%;
+}
+
+/******************Styling for Roadmap*********************/
+.card-container.one {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 300px));
+    justify-content: center;
+    gap: 16px;
+}
+
+.card.roadmap {
+    padding: 2em;
+    display: grid;
+    justify-items: center;
+}
+
+.card img {
+    max-width: 80px;
+}
+
+.card h4 {
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+
+.card p {
+    font-size: 1.125rem;
+}
+
+/******************Styling for The industry*********************/
+.container.industry {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.card.circle {
+    align-self: center;
+}
+
+.container.industry img {
+    max-width: 200px;
+}
+
+#circle-1 img {
+    max-width: 60px;
+}
+
+.text.industry {
+    max-width: 300px;
+}
+
+/******************Styling for typical representation*********************/
+.container.representation .h5 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.container.representation p {
+    font-size: 1.125rem;
+}
+
+.container.representation .why,
+.container.commuters .journey {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.container.representation img {
+    max-width: 100%;
+}
+
+/**********Styling for commuters. current journey class styled with representation*************/
+.container.commuters img {
+    max-width: 100%;
+    margin-top: 1em;
+}
+
+.circle-2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.circle-2 .heading {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.circle-2 .text {
+    flex: 1;
+}
+
+.circle-2 p {
+    margin-bottom: 1em;
+}
+
+.circle-2 img {
+    width: 60px;
+}
+
+.container.commuters blockquote {
+    max-width: 500px;
+    display: grid;
+}
+
+.emoji {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.emoji img {
+    max-height: 60px;
+}
+
+/****************************Styling for archetypes*****************************/
+.archetype-1,
+.archetype-2 {
+    background-color: #fff;
+    padding: 1em;
+}
+
+.archetypes .wrapper h5 {
+    font-size: 1.5rem;
+    text-decoration: underline 1.5px;
+    margin-bottom: 0.5em;
+}
+
+.archetypes p {
+    font-size: 1.125rem;
+    max-width: 90%;
+}
+
+.archetypes .sub {
+    margin-bottom: 0.5em;
+}
+
+.archetypes .wrapper {
+    margin: auto;
+    min-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 500px));
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 0;
+}
+
+.archetypes .heading {
+    font-weight: bold;
+}
+
+.going-cashless h5,
+.competitors .heading h5,
+.gaps h5, .brainstorm h5 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.25em;
+}
+
+/******************Styling for competitiors section******************/
+.competitors .heading {     
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.competitors .heading img {
+    max-width: 60px;
+}
+/**********Malii app*******/
+.malii { 
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.malii h5,
+.fairpay h5 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.malii img {
+    max-width: 150px;
+}
+
+.malii-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 1em;
+}
+
+.malii-content p {
+    max-width: 250px;
+    background-color: #D5E3F9;
+    padding: 1em;
+}
+
+.malii-button,
+.fairpay .button {
+    max-width: fit-content;
+    background-color: #011aa3;
+    padding: 0.625em 1em;
+    margin-top: 1em;
+    border-radius: 5px;
+    box-shadow: 0.5px 0.5px 1px #727272;
+}
+
+.malii-button a,
+.fairpay .button a {
+    color: #fff;
+    text-decoration: none;
+}
+/**********Fairpay app*******/
+.fairpay {
+    display: grid;
+    gap: 8px;
+    text-align: center;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+.fairpay-images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.fairpay-images img {
+    max-width: 250px;
+}
+
+.fairpay .button {
+    margin: auto;
+}
+/**********gaps identified*******/
+.content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+}
+
+.content-wrapper .malii-gap,
+.content-wrapper .fairpay-gap {
+    max-width: 350px;
+    padding: 1em
+}
+
+.content-wrapper p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+/**********brainstorming ideas*******/
+.gaps,
+.brainstorm {
+    margin-top: 1.5em;
+}
+
+.brainstorm-img {
+    max-width: 100%;
+    box-shadow: 0.5px 0.5px 1px #727272;
+}
+
+/**************************Styling for solution section************************/
+.solution .heading.one {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.solution .heading.two {
+     font-size: 1.5rem;
+     font-weight: bold;
+}
+
+.solution p {
+    font-size: 1.125rem;
+    margin-bottom: 1em;
+    max-width: 90%;
+}
+
+.highlight {
+    background-color: #D5E3F9;
+}
+
+.accessories,
+.models {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: space-evenly;
+}
+
+.tag img,
+.device img {
+    max-height: 250px;
+    padding: 1em;
+}
+
+.tag h5,
+.device h5 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+/*******Styling for wireframes*********/
+.wireframes h5 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#emoji {
+    margin-top: 2em;
+}
+/*****Styling for usability testing*****/
+.usability h5 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+.feedback {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.feedback-cards {
+    max-width: 300px;
+    display: grid;
+    justify-items: center;
+    gap: 16px;
+}
+
+.feedback img {
+    max-width: 100px;
+}
+    
+.usability .refine {
+    margin-top: 1em;
+}
+
+/**************************Styling for prototypes section************************/
+.screens {
+    display: grid;
+    justify-items: center;
+}
+
+.prototypes h5 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.screens p {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 0.25em;
+}
+
+.screens img {
+    max-width: 90%;
+}
+
+.models {
+    margin-top: 2em;
+}
+
+.screens .alternative {
+    font-size: 1.125rem;
+    text-align: left;
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+}
+
+/****Styling for existing banking app****/
+.container.existing-ba img{
+    max-width: 100%;
+    margin-top: 1em;
+}
+/*********************Styling for reference list*********************/
+.container.existing-ba p,
+.container.conclusion .heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/*********************Styling for reference list*********************/
+.container.reference h6 {
+    font-size: 2rem;
+}
+
+.container.reference ol {
+    font-size: 1.125rem;
+    padding: 0 1em;
+}
+.container.reference li {
+    font-family: Nunito, sans-serif;
+}
+
+.container.reference a {
+    font-weight: bold;
+    color: #011aa3;
+}
+
+/*********************Styling for thank you/end section*********************/
+.end-body {
+    max-height: fit-content;
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.end-body h6 {
+    text-align: center;
+    font-size: 4.5rem;
+    color: var(--dark-grey);
+    margin-bottom: 0.25em;
+    line-height: 64px;
+}
+
+.end-body a {
+    text-decoration: none;
+    font-size: 1.25rem;
+    max-width: fit-content;
+    color: #fff;
+    background-color: var(--dark-grey);
+    padding: 0.625em 1em;
+    border-radius: 5px;
+    box-shadow: 0.5px 0.5px 1px #727272;
+}
+
+/***********************************Styling for footer******************************************/
+footer {
+    max-height: fit-content;
+    margin: 1em 0;
+}
+
+.footer {
+    text-align: center;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+
+footer hr {
+    color: #20202021;
+}
+
+.socials a {
+    text-decoration: none;
+}
+
+.socials a i {
+    font-size: 2rem;
+    transition: all 0.3s;
+    margin-right: 0.5em;
+}
+
+.socials a i:hover {
+    color: var(--hover);
+}
+
+/*********************************Syling for media query*************************************/
+@media(max-width: 597px) {
+    body {
+        margin: 4.5em 1em 0 1em;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        width: fit-content;
+        height: 35%;
+        padding: 0 2em;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: #f7f7f5;
+        transition: all 0.3s;
+    }
+    .menu li {
+        margin-top: 40px;
+        text-align: start;
+    }
+    .menu li a {
+        padding: 0px;
+    }
+    .open-menu , .close-menu {
+        display: block;
+        color: var(--dark-grey);
+    }
+    #check:checked ~ .menu {right: 0;}
+
+    /***menu***/
+    .role-wrapper {
+        gap: 32px;
+    }
+    
+}

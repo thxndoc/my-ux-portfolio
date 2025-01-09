@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/favicon.png" type="image/png">
+    <title>Portfolio - Thando Cibi</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/688a8bb464.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!--This is the header-->
+<header>
+    <nav>
+        <ul class='nav-bar'>
+            <li class='logo'><a href='#'><img src='./images/logo.png'/></a></li>
+
+            <input type='checkbox' id='check'/>
+
+            <span class="menu">
+                <li><a href="#">HOME</a></li>
+                <li><a href="https://drive.google.com/file/d/1RVqUlkn355DPxv534okxhrYTNmMZFYm9/view?usp=sharing" target="_blank"">DOWNLOAD CV</a></li>
+                <li><a href="#end">CONTACT</a></li>
+                <label for="check" class="close-menu"><i class="fa-solid fa-xmark"></i></label>
+            </span> <!--'label for='' will look for id only, NOT class-->
+
+            <label for="check" class="open-menu"><i class="fa-solid fa-bars"></i></label>
+        </ul>
+    </nav>
+</header>
+
+<!--This is the main content section-->
+<main>
+    <section class="about-me"> <!--about me section-->
+        <h1>About Me...</h1>
+        <p>I am a designer with a keen interest in understanding how people interact with products and how design can elevate their experience. My goal is to use design and technology to deliver experiences that are both seamless and impactful. My ultimate goal is to make a meaningful difference in the world through my work. I am based in Johannesburg, South Africa.</p>
+
+        <h2 class="h2">Tech Skills:</h2>
+        <img src="./images/home/figma.png" alt="figma logo">
+        <img src="./images/home/html-5.png" alt="HTML5 logo">
+        <img src="./images/home/css-3.png" alt="CSS3 logo">
+        <h2>currently learning JavaScript...</h2>
+    </section>
+
+    <section class="ux-section" id="case-studies"> <!--cards section-->
+        <h3>UX Case Studies</h3>
+            <div class="cards">
+
+                <div class="card-1"> <!--card 1-->
+                    <div class="img">
+                        <img src="./images/home/cover-superbalist.png" alt="superbalist case study">
+                    </div>
+                    <h4>The mysterious disappearance of my shoe</h4>
+                    <p>How a confirmation pop-up can be used to improve the user experience on the Superbalist app.</p>
+                    <a href="/superbalist.html" class="see-case-study">
+                        <p>See case study</p>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="card-2"> <!--card 2-->
+                    <div class="img">
+                        <img src="./images/home/cover-taxi.png" alt="superbalist case study">
+                    </div>
+                    <p class="conceptual" id="disclaimer-2">A conceptual project</p>
+                    <h4>Embracing the digital age</h4>
+                    <p>Exploring a cashless payment system for commuters in the minibus taxi industry in South Africa.</p>
+                    <a href="/taxi.html" class="see-case-study">
+                        <p>See case study</p>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="card-3"> <!--card 3-->
+                    <div class="img">
+                        <img src="./images/home/cover-solo-app.png" alt="superbalist case study">
+                    </div>
+                    <p class="conceptual" id="disclaimer-3">A conceptual project</p>
+                    <h4>Solo travel app</h4>
+                    <p>A mobile app for solo travellers to connect with others. This was my very first UX Design project.</p>
+                    <a href="/solo.html" class="see-case-study">
+                        <p>See case study</p>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+    </section>
+
+    <section class="projects-section"> <!--This is the projects section-->
+        <h5>Projects</h5>
+        <div class="project">
+
+            <div class="image"><img src="./images/home/landing page.png" alt="landing page project"></div>
+
+            <div class="heading">
+                <h5>Landing page project</h5>
+                <div class="skills">
+                    <p id="html">HTML</p>
+                    <p id="css">CSS</p>
+                </div>
+            </div>
+
+            <p>
+            A landing page project (desktop version only) to demonstrate my HTML and CSS skills acquired from The Odin Project.
+            </p>
+            
+            <a href="https://thvndoc.github.io/top-foundations-landing-page/" target="_blank" class="see-live-preview">
+                <p>See live preview</p>
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+    </section>
+</main>
+
+<!--This is the footer-->
+ <div class="footer" id="end">
+     <hr>
+     <footer>
+             <div class="socials"> <!--icons for social media-->
+                <a href="mailto:uthandocibi@gmail.com" target="_blank">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+
+                <a href="https://github.com/thvndoc" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>    
+
+                <a href="https://www.linkedin.com/in/thando-cibi-47b066180/" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+             </div>
+             <p>created with ❤️ by Thando C.</p>
+     </footer>
+ </div>
+</body>
+</html>
+
+</body>
+</html>
